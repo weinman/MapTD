@@ -51,13 +51,13 @@ The feature map for the output layers is manipulated to produce three
 independent output layers with the following values at each output
 location:
 
-    1. A score indicating the probability that text is present for
-each point in the map (fully connected layer with a sigmoid).
-    2. Box geometry specifying the distance to the edges of a rotated,
-rectangular bounding box (fully connected layer with a sigmoid for
-stability, scaled by a constant to the fixed maximal ).
-    3. Angle of rotation for the bounding box (fully connected layer
-       with arctan).
+1. A score indicating the probability that text is present for
+   each point in the map (fully connected layer with a sigmoid).
+2. Box geometry specifying the distance to the edges of a rotated,
+   rectangular bounding box (fully connected layer with a sigmoid for
+   stability, scaled by a constant to the fixed maximal ).
+3. Angle of rotation for the bounding box (fully connected layer
+   with arctan).
 
 ### Loss Functions
 
@@ -103,14 +103,14 @@ Using a train model can involve two steps: running the learned model
 to produce predictions and running a separate evaluation against
 ground truth to calculate resulting statistics.
 
-#### Predict
+### Predict
 
 To predict, run `predict.py` setting any needed flags, including the
 path to the store model and input image locations. It produces a text
 file for each image storing the detected rectangles and (optionally) a
 visualization of the rectangles.
 
-#### Evaluate
+### Evaluate
 
 Run `evaluate.py` to calculate precision, recall, f-score, and average
 precision of the predictions.
