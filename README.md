@@ -97,6 +97,15 @@ Training is accomplished in `train.py`. Simply point the command-line
 flags to the correct training data (data should be in JSON format with
 "points" and optional "text" label) and run the script.
 
+#### Checkpoints
+
+[Pre-trained model checkpoints](http://hdl.handle.net/11084/23329) at
+DOI:[11084/23329](http://hdl.handle.net/11084/23329) are used to
+produce results in the following paper:
+
+> Weinman, J. et al. (2019) Deep Neural Networks for Text Detection
+> and Recognition in Historical Maps. In Proc. ICDAR.
+
 ### Testing
 
 Using a train model can involve two steps: running the learned model
@@ -123,7 +132,7 @@ coordinates, 'x' refers to column number and 'y' refers to row number.
 
 ## Citing this work
 
-Please cite the following [paper](https://www.cs.grinnell.edu/~weinman/pubs/weinman19deep.pdf) if you use this code in your own research work:
+Please cite the following [paper](https://weinman.cs.grinnell.edu/pubs/weinman19deep.pdf) if you use this code in your own research work:
 
 ```text
 @inproceedings{ weinman19deep,
@@ -132,7 +141,8 @@ Please cite the following [paper](https://www.cs.grinnell.edu/~weinman/pubs/wein
     booktitle = {Proc. IAPR International Conference on Document Analysis and Recognition},
     month = {Sep.},
     year = {2019},
-    location = {Sydney, Australia}
+    location = {Sydney, Australia},
+    doi = {10.1109/ICDAR.2019.00149}
 } 
 ```
 
